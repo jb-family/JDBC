@@ -134,7 +134,7 @@ public class AuthorDao {
 	}
 
 	// 작가 수정 메소드
-	public int authorUpdate(int authorId, String authorName, String authorDesc) {
+	public int authorUpdate(String authorName, String authorDesc, int authorId) {
 		// 0. import java.sql.*;
 		Connection conn = null;
 		PreparedStatement pstmt = null;
